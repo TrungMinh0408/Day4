@@ -5,7 +5,7 @@
       <!-- ########## Admin Section ########## -->
       <li class="nav-item sidebar-heading px-3 text-muted text-uppercase small fw-bold">Admin</li>
       <li class="nav-item">
-        <a href="/Day4/Day4/backend/pages/dashboard.php" class="nav-link px-3">
+        <a href="/Day4/backend/pages/index.php" class="nav-link px-3">
           <i class="bi bi-house-door me-2"></i> Dashboard
         </a>
       </li>
@@ -19,8 +19,8 @@
           <i class="bi bi-box-seam me-2"></i> Product
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/Day4/Day4/backend/functions/product/productlist.php">Product List</a></li>
-          <li><a class="dropdown-item" href="/Day4/Day4/backend/functions/product/create.php">Create</a></li>
+          <li><a class="dropdown-item dynamic-load" data-url="/Day4/backend/functions/product/productlist.php" href="#">Product List</a></li>
+          <li><a class="dropdown-item dynamic-load" data-url="/Day4/backend/functions/product/create.php" href="#">Create</a></li>
         </ul>
       </li>
 
@@ -31,12 +31,12 @@
           <i class="bi bi-people me-2"></i> User
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/Day4/Day4/backend/functions/user/userlist.php">User List</a></li>
-          <li><a class="dropdown-item" href="/Day4/Day4/backend/functions/user/create.php">Create</a></li>
+          <li><a class="dropdown-item dynamic-load" data-url="/Day4/backend/functions/user/userlist.php" href="#">User List</a></li>
+          <li><a class="dropdown-item dynamic-load" data-url="/Day4/backend/functions/user/createuser.php" href="#">Create</a></li>
         </ul>
       </li>
 
     </ul>
   </div>
 </nav>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+

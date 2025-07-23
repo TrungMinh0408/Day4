@@ -101,7 +101,7 @@ $result = $conn->query($sql);
             echo "<td>" . htmlspecialchars(substr($row['description'], 0, 50)) . "...</td>";
             echo "<td>" . number_format($row['price']) . "₫</td>";
             echo "<td>" . htmlspecialchars($row['stock_quantity']) . "</td>";
-            echo "<td><img src='/Day4/Day4/assets/" . htmlspecialchars($row['image_url']) . "' class='product-img' alt='image'></td>";
+            echo "<td><img src='/Day4/assets/" . htmlspecialchars($row['image_url']) . "' class='product-img' alt='image'></td>";
             echo "<td>" . htmlspecialchars($row['category']) . "</td>";
             echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
             echo "<td><a href='updateproduct.php?id={$row['id']}' class='btn btn-warning btn-sm'>✏️ Sửa</a></td>";

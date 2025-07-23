@@ -3,7 +3,7 @@
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/Day4/Day4/assets/images/img1.png" class="d-block w-100">
+        <img src="/assets/images/img1.png" class="d-block w-100">
         <div class="container">
         </div>
       </div>
@@ -22,7 +22,7 @@ $result = $conn->query($sql);
   <div class="row text-center mb-4">
    <?php while($row = $result->fetch_assoc()): ?>
   <div class="col-lg-4 mb-4">
-    <img src="/Day4/Day4/assets/<?= htmlspecialchars($row['image_url']) ?>" 
+    <img src="/Day4/assets/<?= htmlspecialchars($row['image_url']) ?>" 
         alt="<?= htmlspecialchars($row['name']) ?>" 
         class="img-fluid" 
         style="height: 200px; object-fit: cover;">
@@ -32,7 +32,7 @@ $result = $conn->query($sql);
     <p><strong><?= number_format($row['price'], 0) ?>₫</strong></p>
     <p>
       <a class="btn btn-outline-primary" 
-         href="Day4/Day4/frontend/pages/productDetail.php?id=<?= $row['id'] ?>">
+         href="/Day4/frontend/pages/productDetail.php?id=<?= $row['id'] ?>">
         Chi tiết
       </a>
     </p>

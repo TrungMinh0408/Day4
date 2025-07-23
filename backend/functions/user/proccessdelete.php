@@ -9,7 +9,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-        header("Location: /Day4/Day4/backend/functions/user/userlist.php?deleted=1");
+        header("Location: /backend/functions/user/userlist.php?deleted=1");
         exit();
     } else {
         echo "❌ Lỗi khi xóa người dùng: " . $stmt->error;

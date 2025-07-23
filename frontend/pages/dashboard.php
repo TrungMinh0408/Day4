@@ -55,7 +55,7 @@
                             <td><?=$item[2] ?></td>
                             <td><?=$item[3] ?></td>
                             <td>
-                                <img src="/DAY4/assets/<?=$item[4]?>" alt="" style="width:200px;height:auto;">
+                                <img src="/assets/<?=$item[4]?>" alt="" style="width:200px;height:auto;">
                             </td>
                             <td>
                             <a href="update.php?id=<?=$item[0]?>" class="btn btn-sm btn-warning">Update</a>
